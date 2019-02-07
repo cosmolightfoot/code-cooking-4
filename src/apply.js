@@ -6,8 +6,8 @@ const applicantOne = {
 };
 
 const applicantTwo = {
-    lastName: 'Arya',
-    firstName: 'Stark',
+    firstName: 'Arya',
+    lastName: 'Stark',
     tvShow: 'Game of Thrones',
     ability: 'Badass'
 };

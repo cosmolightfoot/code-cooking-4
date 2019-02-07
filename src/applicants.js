@@ -10,10 +10,15 @@ for(let i = 0; i < applicants.length; i++) {
     const applicant = applicants[i];
     
     const tableRow = document.createElement('tr');
-    
+
     const firstNameCell = document.createElement('td');
-    firstNameCell.textContent = applicant.firstName;
+
+    const link = document.createElement('a');
+    link.href = 'applicant-detail.html?name=' + encodeURIComponent(applicant.firstName + ' ' + applicant.lastName);
+    link.target = '';
+    link.textContent = applicant.firstName;
     tableRow.appendChild(firstNameCell);
+    firstNameCell.appendChild(link);
     
     const lastNameCell = document.createElement('td');
     lastNameCell.textContent = applicant.lastName;
