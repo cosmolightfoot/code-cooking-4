@@ -13,7 +13,7 @@ else {
 const searchParams = new URLSearchParams(window.location.search);
 //utilize get method from object to find the search param and value
 const name = searchParams.get('name');
-console.log(name);
+//cycle through entries, find an applicant with a name matching the url search query and make applicant variable match it
 for(let index = 0; index < applicants.length; index++) {
     const currentApplicant = applicants[index]; 
     const fullName = currentApplicant.firstName + ' ' + currentApplicant.lastName;
